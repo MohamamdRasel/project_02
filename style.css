@@ -220,7 +220,7 @@
 
 .button_wrapper {
     display: inline-flex;
-    padding: 21px 40px;
+    padding: 21px 4px;
     align-items: flex-start;
     gap: 10px; 
 }
@@ -228,4 +228,88 @@
     border-radius: 48px;
     background: #4EC5F7;
 }
+
+/*==================================
+ Responsive Navbar Section For Mobile
+====================================*/
+ 
+@media screen and (max-width: 425px) { 
+    .container_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container img {
+        margin: 10px;
+    }
+    .img_last {
+        margin-left: 50px;
+    }
+}
+
+/*==================================
+ Responsive Play Section For Tablet
+====================================*/
+
+@media screen and (min-width: 425px) and (max-width: 768px) { 
+
+    .button_wrapper {
+        padding: 21px 24px;
+    }
+    .container_wrapper {
+        margin: 10px 100px 20px 150px;
+
+    }
+}
+
+/*======================
+    Online Game Section
+========================*/
+.main_wrapper {
+
+}
+.main_title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.main_title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_description {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.box_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: ;
+    margin-right: 150px;
+    margin-left: 50px;
+    min-width: 70%;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin-right: 10px;
+    width: 15%;
+
+}
+.box img {
+    width: 300px;
+}
+
+
+
+
+
+
 
