@@ -330,11 +330,6 @@
 ====================================*/
  
 
-
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 1024px) { 
    .box {
     width: 32%;
@@ -418,4 +413,40 @@
     margin-right: 250px;
 }
 
+/*==================================
+ Responsive Navbar Section For Mobile
+====================================*/
+ 
+@media screen and (max-width: 425px) { 
+    .play_wrapper {
+        flex-direction: column;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+    }
+
+    .left_play_section {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-left: 150px;
+    }
+}
+
+/*==================================
+ Responsive Play Section For Tablet
+====================================*/
+
+@media screen and (min-width: 425px) and (max-width: 768px) { 
+    .play_wrapper {
+        flex-direction: column;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+    }
+
+    .left_play_section {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+   
+}
 
