@@ -289,9 +289,8 @@
 }
 
 .box_wrapper {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
-    margin: ;
     margin-right: 150px;
     margin-left: 50px;
     min-width: 70%;
@@ -301,14 +300,73 @@
 .box {
     margin-right: 10px;
     width: 15%;
+    position: relative;
+    display: inline-block;
 
 }
 .box img {
     width: 300px;
 }
 
+/*
+.box img:hover {
+    cursor: pointer;
+    background-color: #3C354F;
+    opacity: 1;
+}
+.box img::after {
+    content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+*/
+
+/*==================================
+ Responsive Navbar Section For Mobile
+====================================*/
+ 
 
 
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+   .box {
+    width: 32%;
+
+   }
+    .box img {
+        width: 210px;
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) { 
+    .box_wrapper {
+     flex-wrap: wrap;
+    }
+    .box img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main_wrapper {
+        margin-top: 750px;
+    }
+    .box_wrapper {
+        flex-direction: column;
+        min-width: 5%;
+    }
+    .box {
+       width: 100%;
+       margin-left: 40px;
+    }
+  
+ }
 
 
 
